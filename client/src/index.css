@@ -1047,38 +1047,7 @@ input {
   }
 }
 
-@media (max-width: 680px) {
-  body {
-    font-size: 15px;
-  }
-
-  .page-width,
-  .header-inner {
-    width: min(100% - 36px, var(--page));
-  }
-
-  .header-inner {
-    min-height: 78px;
-    gap: 14px;
-  }
-
-  .brand {
-    gap: 10px;
-  }
-
-  .brand-wordmark {
-    width: 108px;
-  }
-
-  .brand-divider {
-    height: 30px;
-  }
-
-  .brand-name {
-    font-size: 8px;
-    letter-spacing: 0.07em;
-  }
-
+@media (max-width: 800px) {
   .desktop-nav {
     display: none;
   }
@@ -1092,7 +1061,7 @@ input {
   .mobile-nav summary {
     display: flex;
     min-width: 46px;
-    min-height: 42px;
+    min-height: 44px;
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -1126,13 +1095,58 @@ input {
   }
 
   .mobile-nav nav a {
-    padding: 11px 12px;
+    padding: 12px;
     color: #f2e8de;
     font-size: 13px;
   }
 
   .mobile-nav nav a:hover {
     background: rgb(255 255 255 / 8%);
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .hero-feature {
+    width: min(100%, 590px);
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    font-size: 15px;
+  }
+
+  .page-width,
+  .header-inner {
+    width: min(100% - 36px, var(--page));
+  }
+
+  .header-inner {
+    min-height: 78px;
+    gap: 14px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-wordmark {
+    width: 108px;
+  }
+
+  .brand-divider {
+    height: 30px;
+  }
+
+  .brand-name {
+    font-size: 8px;
+    letter-spacing: 0.07em;
   }
 
   .hero {
@@ -1401,6 +1415,20 @@ input {
 
   .hero h1 {
     font-size: 43px;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-bottom {
+    min-height: 0;
+    padding-block: 11px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .devotional-heading {

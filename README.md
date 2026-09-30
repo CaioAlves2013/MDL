@@ -15,6 +15,12 @@ A página inicial contém um destaque para o episódio 16 e quatro cartões dos 
 
 As rotas atualmente publicadas estão declaradas em `client/public/manus-routes.json`, servido em `/manus-routes.json`.
 
+## Publicação na Vercel
+
+O `vercel.json` na raiz seleciona Vite e fixa a instalação com `pnpm install --frozen-lockfile`, o build com `pnpm build:static` e o diretório publicado em `dist/public/`. A versão do pnpm está fixada em `package.json` e `pnpm-lock.yaml`.
+
+Tudo dentro de `client/public/` é copiado pelo Vite para `dist/public/`; portanto as artes em `client/public/assets/mdl/brand/` acompanham o site no build e no repositório Git. O projeto Vercel deve ser conectado à branch principal do repositório `MDL` para implantar os commits dessa branch.
+
 ## WhatsApp — estado atual
 
 A área de inscrição é apenas uma prévia visual: o número, o consentimento e o botão estão desativados. Nesta versão o site **não solicita, salva nem envia** números ou mensagens. Para ativar a lista é necessário primeiro decidir entre administração manual no WhatsApp Business e integração com a WhatsApp Business Platform/Cloud API. A automação pode exigir coleta rastreável de opt-in, armazenamento protegido, modelos aprovados para mensagens fora da janela de atendimento e tratamento dos pedidos de cancelamento.
