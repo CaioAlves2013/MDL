@@ -1,24 +1,216 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#33251d" />
+    <meta name="description" content="Uma pausa para fortalecer a fé. Assista aos episódios do MDL e encontre leituras devocionais para o seu caminho." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MDL — Momento de Devoção e Luz" />
+    <meta property="og:title" content="MDL — Momento de Devoção e Luz" />
+    <meta property="og:description" content="Vídeos do MDL e leituras devocionais para acompanhar sua jornada de fé." />
+    <meta property="og:image" content="https://i.ytimg.com/vi/EBhsKOWRkK0/hq720.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MDL — Momento de Devoção e Luz" />
+    <meta name="twitter:description" content="Vídeos do MDL e leituras devocionais para acompanhar sua jornada de fé." />
+    <meta name="twitter:image" content="https://i.ytimg.com/vi/EBhsKOWRkK0/hq720.jpg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/src/index.css" />
     <title>MDL — Momento de Devoção e Luz</title>
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
   </head>
-
   <body>
-    <div id="root"></div>
-    <script src="/api/platform/config.js"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="MDL — ir para o início">
+          <img class="brand-wordmark" src="/assets/mdl/brand/ativo-7.png" alt="MDL" width="152" height="74" />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-name">Momento de<br />Devoção e Luz</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#videos">Vídeos</a>
+          <a href="#devocionais">Devocionais</a>
+          <a class="nav-whatsapp" href="#whatsapp">Lista de transmissão</a>
+        </nav>
+
+        <details class="mobile-nav">
+          <summary aria-label="Abrir menu de navegação"><span aria-hidden="true">☰</span><span class="mobile-nav-label">Menu</span></summary>
+          <nav aria-label="Navegação móvel">
+            <a href="#videos">Vídeos</a>
+            <a href="#devocionais">Devocionais</a>
+            <a href="#whatsapp">Lista de transmissão</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-inner page-width">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-mark" aria-hidden="true"></span> Um momento para a sua jornada</p>
+            <h1 id="hero-title">Devoção e luz,<br /><em>para levar com você.</em></h1>
+            <p class="hero-description">Encontre um instante de pausa: episódios do MDL e leituras que convidam a refletir, agradecer e seguir com fé.</p>
+            <div class="hero-actions">
+              <a class="button button-cream" href="#videos">Conheça os episódios <span aria-hidden="true">↓</span></a>
+              <a class="text-link text-link-light" href="#devocionais">Leia um devocional <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-signature">
+              <span class="signature-line" aria-hidden="true"></span>
+              <span>Momento de Devoção e Luz</span>
+            </div>
+          </div>
+
+          <div class="hero-feature">
+            <div class="feature-overline">
+              <span class="feature-label">EPISÓDIO MAIS RECENTE</span>
+              <span class="feature-number">MDL&nbsp; 16</span>
+            </div>
+            <a class="featured-video" href="https://www.youtube.com/watch?v=EBhsKOWRkK0" target="_blank" rel="noopener noreferrer" aria-label="Assistir no YouTube: MDL episódio 16 — Ananias: Quando a obediência exige confiar no inimigo">
+              <img src="https://i.ytimg.com/vi/EBhsKOWRkK0/hq720.jpg" alt="Miniatura do episódio 16 do MDL sobre Ananias" width="1280" height="720" fetchpriority="high" />
+              <span class="play-button" aria-hidden="true">▶</span>
+              <span class="video-duration">11:03</span>
+            </a>
+            <div class="featured-caption">
+              <div>
+                <span class="caption-kicker">UMA HISTÓRIA DE CORAGEM E FÉ</span>
+                <h2>Ananias: quando obedecer exige confiar</h2>
+              </div>
+              <a class="round-link" href="https://www.youtube.com/watch?v=EBhsKOWRkK0" target="_blank" rel="noopener noreferrer" aria-label="Abrir episódio 16 do MDL no YouTube">↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom page-width" aria-hidden="true"><span>Fé para o cotidiano</span><span class="hero-bottom-rule"></span><span>Reflexões que iluminam</span></div>
+      </section>
+
+      <section class="episodes section-pad" id="videos" aria-labelledby="episodes-title">
+        <div class="section-heading page-width">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> ASSISTA &amp; REFLITA</p>
+            <h2 id="episodes-title">Episódios recentes</h2>
+            <p class="section-intro">Histórias, encontros e aprendizados que continuam falando com a gente.</p>
+          </div>
+          <a class="text-link text-link-dark" href="https://www.youtube.com/@GUILHERMENMOURAJORGE" target="_blank" rel="noopener noreferrer">Ver todos no canal <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="episode-grid page-width">
+          <article class="episode-card">
+            <a class="episode-image-link" href="https://www.youtube.com/watch?v=UoIt0Mfveus" target="_blank" rel="noopener noreferrer" aria-label="Assistir episódio 15 no YouTube">
+              <img src="https://i.ytimg.com/vi/UoIt0Mfveus/hq720.jpg" alt="Miniatura do episódio 15 do MDL" width="1280" height="720" loading="lazy" />
+              <span class="episode-play" aria-hidden="true">▶</span>
+              <span class="video-duration">15:25</span>
+            </a>
+            <div class="episode-info"><span class="episode-index">EPISÓDIO 15</span><h3><a href="https://www.youtube.com/watch?v=UoIt0Mfveus" target="_blank" rel="noopener noreferrer">Os privilégios esquecidos: quando a gratidão restaura a visão</a></h3><a class="episode-link" href="https://www.youtube.com/watch?v=UoIt0Mfveus" target="_blank" rel="noopener noreferrer">Assistir no YouTube <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="episode-card">
+            <a class="episode-image-link" href="https://www.youtube.com/watch?v=8QOGvS2MLYM" target="_blank" rel="noopener noreferrer" aria-label="Assistir episódio 14 no YouTube">
+              <img src="https://i.ytimg.com/vi/8QOGvS2MLYM/hq720.jpg" alt="Miniatura do episódio 14 do MDL sobre Jônatas" width="1280" height="720" loading="lazy" />
+              <span class="episode-play" aria-hidden="true">▶</span>
+              <span class="video-duration">13:25</span>
+            </a>
+            <div class="episode-info"><span class="episode-index">EPISÓDIO 14</span><h3><a href="https://www.youtube.com/watch?v=8QOGvS2MLYM" target="_blank" rel="noopener noreferrer">Jônatas: quando a lealdade custa mais que a vida</a></h3><a class="episode-link" href="https://www.youtube.com/watch?v=8QOGvS2MLYM" target="_blank" rel="noopener noreferrer">Assistir no YouTube <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="episode-card">
+            <a class="episode-image-link" href="https://www.youtube.com/watch?v=ijuXV9ot56Y" target="_blank" rel="noopener noreferrer" aria-label="Assistir episódio 13 no YouTube">
+              <img src="https://i.ytimg.com/vi/ijuXV9ot56Y/hq720.jpg" alt="Miniatura do episódio 13 do MDL sobre Jabes" width="1280" height="720" loading="lazy" />
+              <span class="episode-play" aria-hidden="true">▶</span>
+              <span class="video-duration">10:18</span>
+            </a>
+            <div class="episode-info"><span class="episode-index">EPISÓDIO 13</span><h3><a href="https://www.youtube.com/watch?v=ijuXV9ot56Y" target="_blank" rel="noopener noreferrer">Jabes: quando a oração muda o destino</a></h3><a class="episode-link" href="https://www.youtube.com/watch?v=ijuXV9ot56Y" target="_blank" rel="noopener noreferrer">Assistir no YouTube <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="episode-card">
+            <a class="episode-image-link" href="https://www.youtube.com/watch?v=uyn-5JsBkOM" target="_blank" rel="noopener noreferrer" aria-label="Assistir episódio 12 no YouTube">
+              <img src="https://i.ytimg.com/vi/uyn-5JsBkOM/hq720.jpg" alt="Miniatura do episódio 12 do MDL" width="1280" height="720" loading="lazy" />
+              <span class="episode-play" aria-hidden="true">▶</span>
+              <span class="video-duration">15:28</span>
+            </a>
+            <div class="episode-info"><span class="episode-index">EPISÓDIO 12</span><h3><a href="https://www.youtube.com/watch?v=uyn-5JsBkOM" target="_blank" rel="noopener noreferrer">A voz que você evita pode ser a única que está certa</a></h3><a class="episode-link" href="https://www.youtube.com/watch?v=uyn-5JsBkOM" target="_blank" rel="noopener noreferrer">Assistir no YouTube <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+        <div class="episodes-footer page-width"><span class="episodes-footer-stamp"><img src="/assets/mdl/brand/destaque-01.webp" alt="" width="76" height="76" loading="lazy" /></span><p>Este é só um começo. <strong>Todos os episódios estão no canal do MDL.</strong></p><a class="text-link text-link-dark" href="https://www.youtube.com/@GUILHERMENMOURAJORGE" target="_blank" rel="noopener noreferrer">Continuar no canal <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="devotionals section-pad" id="devocionais" aria-labelledby="devotionals-title">
+        <div class="devotional-intro page-width">
+          <div class="section-heading devotional-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> UM TEMPO DE REFLEXÃO</p>
+              <h2 id="devotionals-title">Palavras para<br /><em>guardar no coração.</em></h2>
+              <p class="section-intro">Leituras breves para encontrar significado nas Escrituras e trazer a reflexão para os dias de hoje.</p>
+            </div>
+            <div class="devotional-mark" aria-hidden="true"><img src="/assets/mdl/brand/destaque-02.webp" alt="" width="146" height="146" loading="lazy" /></div>
+          </div>
+        </div>
+
+        <div class="reading-grid page-width">
+          <article class="reading-card">
+            <div class="reading-card-top"><span class="reading-number">01</span><img class="reading-emblem emblem-clay" src="/assets/mdl/brand/destaque-04.webp" alt="" width="76" height="76" loading="lazy" /></div>
+            <p class="reading-topic">CORAGEM PARA RESPONDER</p>
+            <h3>Quando obedecer pede confiança</h3>
+            <p class="scripture">Atos 9:10–17</p>
+            <p class="reading-copy">Ananias conhecia a fama de Saulo e, por isso, hesitou. Ainda assim, ouviu o chamado e deu o passo possível naquele momento: foi ao encontro de alguém que temia. Às vezes, a coragem não é ausência de receio; é confiar que Deus pode nos acompanhar enquanto obedecemos com prudência e coração aberto.</p>
+            <span class="reading-endmark" aria-hidden="true">✳</span>
+          </article>
+
+          <article class="reading-card reading-card-featured">
+            <div class="reading-card-top"><span class="reading-number">02</span><img class="reading-emblem emblem-sand" src="/assets/mdl/brand/destaque-03.webp" alt="" width="76" height="76" loading="lazy" /></div>
+            <p class="reading-topic">UM OLHAR DE GRATIDÃO</p>
+            <h3>A gratidão restaura o olhar</h3>
+            <p class="scripture">Lucas 17:15–19</p>
+            <p class="reading-copy">Entre os que foram curados, um voltou para agradecer. Seu gesto interrompeu a pressa e reconheceu a graça recebida. Cultivar gratidão não apaga as dificuldades, mas nos ajuda a perceber o que continua florescendo no caminho — e a responder com o coração presente.</p>
+            <span class="reading-endmark" aria-hidden="true">✳</span>
+          </article>
+
+          <article class="reading-card">
+            <div class="reading-card-top"><span class="reading-number">03</span><img class="reading-emblem emblem-mist" src="/assets/mdl/brand/destaque-05.webp" alt="" width="76" height="76" loading="lazy" /></div>
+            <p class="reading-topic">PRESENÇA QUE FORTALECE</p>
+            <h3>Uma amizade que reacende a esperança</h3>
+            <p class="scripture">1 Samuel 23:16</p>
+            <p class="reading-copy">Jônatas procurou Davi e o fortaleceu em Deus. Há momentos em que a presença de alguém querido nos ajuda a lembrar aquilo que o medo tentou apagar. Ser leal também pode significar oferecer escuta, encorajamento e companhia quando a caminhada de outra pessoa fica mais difícil.</p>
+            <span class="reading-endmark" aria-hidden="true">✳</span>
+          </article>
+        </div>
+
+        <div class="quiet-note page-width"><img src="/assets/mdl/brand/logo-fundo-escuro.webp" alt="" width="58" height="58" loading="lazy" /><p>Reserve um instante. Leia com calma. Leve consigo aquilo que fizer sentido para a sua caminhada.</p><span class="quiet-note-flourish" aria-hidden="true">✳</span></div>
+      </section>
+
+      <section class="whatsapp-section section-pad" id="whatsapp" aria-labelledby="whatsapp-title">
+        <div class="whatsapp-inner page-width">
+          <div class="whatsapp-copy">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-mark" aria-hidden="true"></span> UMA PALAVRA PODE ACOMPANHAR O DIA</p>
+            <h2 id="whatsapp-title">Devocionais no seu WhatsApp.</h2>
+            <p>Estamos preparando um espaço para enviar novidades e leituras do MDL. A lista de transmissão será ativada depois que a integração for definida.</p>
+            <div class="coming-soon"><span class="status-dot" aria-hidden="true"></span><span><strong>Inscrições em breve</strong><br />Nenhum dado é salvo e nenhuma mensagem é enviada por esta página nesta etapa.</span></div>
+          </div>
+
+          <form class="signup-preview" aria-labelledby="whatsapp-title" aria-describedby="signup-status">
+            <fieldset disabled>
+              <legend>Prévia da inscrição</legend>
+              <label for="phone-preview">Seu número de WhatsApp</label>
+              <div class="phone-field"><span class="country-code" aria-hidden="true">+55</span><input id="phone-preview" type="tel" autocomplete="tel-national" placeholder="Disponível em breve" aria-describedby="signup-status" /></div>
+              <label class="consent-option" for="consent-preview"><input id="consent-preview" type="checkbox" /><span>Quero receber novidades e devocionais do MDL. Sei que posso cancelar quando quiser.</span></label>
+              <button class="button button-disabled" type="submit" disabled>Inscrição em breve <span aria-hidden="true">→</span></button>
+            </fieldset>
+            <p id="signup-status" class="signup-status">Esta é apenas uma prévia visual. Os campos estão desativados até a definição da integração. Não informe seu número aqui.</p>
+          </form>
+          <img class="newsletter-art" src="/assets/mdl/brand/destaque-01.webp" alt="" width="112" height="112" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-width">
+        <a class="footer-brand" href="#inicio" aria-label="MDL — voltar ao início"><img src="/assets/mdl/brand/ativo-7.png" alt="MDL — Momento de Devoção e Luz" width="138" height="67" loading="lazy" /></a>
+        <p>Um momento de devoção. Uma vida iluminada pela fé.</p>
+        <a class="footer-channel" href="https://www.youtube.com/@GUILHERMENMOURAJORGE" target="_blank" rel="noopener noreferrer">Acompanhe no YouTube <span aria-hidden="true">↗</span></a>
+        <span class="footer-mark" aria-hidden="true"><img src="/assets/mdl/brand/destaque-03.webp" alt="" width="52" height="52" loading="lazy" /></span>
+      </div>
+      <div class="footer-bottom page-width"><span>© MDL — Momento de Devoção e Luz</span><a href="#inicio">Voltar ao início ↑</a></div>
+    </footer>
   </body>
-
 </html>

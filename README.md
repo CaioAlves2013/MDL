@@ -1,14 +1,20 @@
 # MDL — Momento de Devoção e Luz
 
-React / Express / tRPC / Drizzle starter, adapted from the Sandbox web-db-user template.
+Site estático editorial em português para apresentar os episódios do MDL e oferecer reflexões devocionais. A estrutura é indexável desde o HTML, funciona sem JavaScript e usa as artes oficiais compartilhadas no projeto.
 
-- `pnpm dev`: development server; honors `PORT` (default 3000).
-- `pnpm build` / `pnpm start`: build and serve `dist/index.js` and `dist/public/`.
-- `pnpm db:migrate`: apply checked-in migrations. `pnpm db:push`: generate and apply new schema changes.
-- `pnpm check` / `pnpm test`: types and application tests.
+## Executar e validar
 
-Start with the Webdev skill's default-template guide. Platform login, storage, payments and service contracts live in its shared references; read the relevant capability before extending its helper.
+- `pnpm dev:static` — inicia a prévia local na porta configurada (`3000` por padrão).
+- `pnpm build:static` — gera o site em `dist/public/`, pronto para hospedagem estática.
+- `pnpm check` — verifica os tipos TypeScript do starter mantido no repositório.
+- `pnpm test` — executa os testes já existentes.
 
-`server/_core/publicConfig.ts` exposes only named public runtime values. Private keys stay server-side. The platform serves managed `/manus-storage/` assets; the application does not register a second proxy.
+## Conteúdo
 
-Platform configuration is readable and editable through `webdev.config`. Default settings are initial values, not enforced constraints. The agent may modify the files, commands and configuration or follow the flexible guide for another stack.
+A página inicial contém um destaque para o episódio 16 e quatro cartões dos episódios 12–15, cada qual ligado ao seu vídeo exato no canal oficial. Os devocionais são reflexões originais com referências bíblicas curtas. As artes da pasta `client/public/assets/mdl/brand/` vieram dos arquivos compartilhados e foram preservadas; `client/public/favicon.png` é um ícone quadrado simplificado, inspirado na árvore e no livro do emblema, e usado como favicon e marca do projeto.
+
+As rotas atualmente publicadas estão declaradas em `client/public/manus-routes.json`, servido em `/manus-routes.json`.
+
+## WhatsApp — estado atual
+
+A área de inscrição é apenas uma prévia visual: o número, o consentimento e o botão estão desativados. Nesta versão o site **não solicita, salva nem envia** números ou mensagens. Para ativar a lista é necessário primeiro decidir entre administração manual no WhatsApp Business e integração com a WhatsApp Business Platform/Cloud API. A automação pode exigir coleta rastreável de opt-in, armazenamento protegido, modelos aprovados para mensagens fora da janela de atendimento e tratamento dos pedidos de cancelamento.
